@@ -21,7 +21,7 @@ end
 
   def apply_discount
     if self.discount > 0
-      self.total += (self.total * self.discount/100)
+      self.total += (self.total * self.discount/100) - self.discount
       puts "After the discount, the total comes to #{total}."
     else
       puts "There is no discount to apply."
