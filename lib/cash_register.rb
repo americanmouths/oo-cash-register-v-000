@@ -14,8 +14,7 @@ class CashRegister
   def add_item(title, price, quantity=1)
     if quantity > 0
     self.total += (price * quantity)
-    parsed_quantity = quantity.join(", ")
-    @items << (title * parsed_quantity)
+    @items << (title * quantity)
   else
     self.total += price
     @items << title
