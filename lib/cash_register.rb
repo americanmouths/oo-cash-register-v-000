@@ -20,6 +20,7 @@ class CashRegister
     if self.discount
     discount = total
   end
+end
 
   def items
     @cart_items
