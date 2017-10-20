@@ -17,7 +17,7 @@ class CashRegister
     quantity.times do
       items << title
     end
-      
+
   else
     self.total += price
     @items << title
